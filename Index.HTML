@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head><style>
+    /* Estilos gerais */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Estilos para o campo de texto */
+    #código {
+      width: 94%;
+      height:190px;
+      padding: 5px;
+      
+      border: 1px solid black;
+      border-radius: 5px;
+      resize: none;
+    }
+
+    /* Estilos para o botão */
+    #exe {
+      background-color: #0074d9;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+ h1{
+  text-align: center;
+}
+    /* Estilos para a saída */
+    #saída {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  </style>
+<body>
+  <h1> read ide</h1>
+  <textarea name="" id="código" cols="30" rows="10"></textarea>
+
+  <button id="exe">Executar</button>  
+
+  <p id="saída"></p>
+
+  <script>
+  
+    function exe() {
+      const código = document.getElementById('código').value;
+      const resultado = eval(código);
+      
+      document.getElementById('saída').innerHTML = resultado;
+    }
+
+    document.getElementById('exe').addEventListener('click', exe);
+  </script>
+</body>
+</html>
