@@ -1,0 +1,39 @@
+body {
+    font-size: 15pt;
+}    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Estilos para o campo de texto */
+    #código {
+      width: 94%;
+      height:190px;
+      padding: 5px;
+      
+      border: 3px solid black;
+      border-radius: 5px;
+      resize: none;
+    }
+
+    /* Estilos para o botão */
+    button {
+      background-color: #0074d9;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+ h1{
+  text-align: center;
+}
+    /* Estilos para a saída */
+    #saída {
+      margin-top: 20px;
+      font-weight: bold;
+      text-align: center;
+    }
